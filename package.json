@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Learning PlayWright",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "npx playwright test tests/APIBasics.spec.ts --headed"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/priya-durai/PlayWrightTest.git"

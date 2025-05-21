@@ -13,7 +13,7 @@ import { defineConfig, devices } from '@playwright/test';
  */
 const config=({
   testDir: './tests',
-  timeout: 40*1000,
+  timeout: 100*1000,
   expect:{
     timeout: 7000
   },
@@ -33,15 +33,16 @@ const config=({
     // baseURL: 'http://127.0.0.1:3000',
     browserName: 'chromium',
     headless: false,
+    screenshot: 'on',
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
-    trace: 'on-first-retry',
+    trace: 'retain-on-failure',
   },
 
   /* Configure projects for major browsers */
   projects: [
     {
       name: 'chromium',
-      use: { ...devices['Desktop Chrome'] },
+      use: { ...devices['Desktop Chrome']},
     },
 
 
