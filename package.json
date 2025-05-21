@@ -1,0 +1,24 @@
+{
+  "name": "playwrighttest",
+  "version": "1.0.0",
+  "description": "Learning PlayWright",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test tests/APIBasics.spec.ts --headed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/priya-durai/PlayWrightTest.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/priya-durai/PlayWrightTest/issues"
+  },
+  "homepage": "https://github.com/priya-durai/PlayWrightTest#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.52.0",
+    "@types/node": "^22.14.1"
+  }
+}
